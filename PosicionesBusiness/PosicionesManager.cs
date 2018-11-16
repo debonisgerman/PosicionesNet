@@ -25,10 +25,9 @@ namespace PosicionesNegocio
                 return modelo;
             }
 
-            
                 PosicionesEntitiesRepositorio<Palabras> Palabras = new PosicionesEntitiesRepositorio<Palabras>();
                 var buscarPalabra = Palabras.GetFirstOrDefault(x => x.Palabra == oParam.Palabra);
-
+            
             
 
             if (buscarPalabra == null)
@@ -47,8 +46,7 @@ namespace PosicionesNegocio
             }
             
 
-            
-            
+
 
             oParam.Palabra = oParam.Palabra.ToUpper();
 
