@@ -15,13 +15,13 @@ namespace PosicionesNegocio
 
             if (string.IsNullOrEmpty(oParam.Palabra))
             {
-                modelo.Errores = "La palabra a buscar no puede estar vacía";
+                modelo.Errores = "La palabra a buscar no puede estar vacía.";
                 return modelo;
             }
 
             if (oParam.Palabra.Length > 10)
             {
-                modelo.Errores = "La palabra a buscar no puede exceder los 10 caracteres";
+                modelo.Errores = "La palabra a buscar no puede exceder los 10 caracteres.";
                 return modelo;
             }
 
